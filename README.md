@@ -1,2 +1,15 @@
-# AWS-Codedeploy-EC2-Pipeline-With-Jenkins
-Problem Statement: Set up a CI/CD pipeline using AWS, Jenkins, and CodeDeploy to deploy a web application to a server when code is pushed to a repository. Ensure the deployed application is reachable on any browser and make the setup scalable.
+# Ram Hemareddy AWS CICD Pipeline Code Deployment to AWS EC2 Instance
+
+
+<b>User Data for Dependencies installations for AMAZON Linux 2:-</b>
+
+#!/bin/bash<br />
+sudo yum -y update<br />
+sudo yum -y install ruby<br />
+sudo yum -y install wget<br />
+cd /home/ec2-user<br />
+wget https://aws-codedeploy-ap-south-1.s3.ap-south-1.amazonaws.com/latest/install<br />
+sudo chmod +x ./install<br />
+sudo ./install auto<br />
+sudo yum install -y python-pip<br />
+sudo pip install awscli<br />
